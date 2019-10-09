@@ -29,7 +29,7 @@ bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + "/commands");
 
 if (process.env.BOT_TOKEN) bot.login(process.env.BOT_TOKEN);
-else bot.login(config.token);
+else bot.login(process.env.BOT_TOKEN);
 
 
 
